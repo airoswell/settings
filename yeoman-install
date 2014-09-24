@@ -1,0 +1,9 @@
+To install Yeoman, one might run into errors like
+
+npm ERR! Error: EACCES, mkdir '/usr/Lelouch/.npm
+
+This means the .npm does not allow write previlege. Go to Terminal, type
+
+sudo chown -R <username> ~/.npm
+
+to fix it.
