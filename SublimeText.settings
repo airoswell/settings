@@ -1,8 +1,8 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SublimePythonIDE) (SL).tmTheme",
 	"fade_fold_buttons": false,
-	"font_face": "Source Code Pro",
-	"font_size": 12,
+	"font_face": "Source Code Pro Light",
+	"font_size": 17,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -12,7 +12,7 @@
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
 	"spell_check": true,
-	"theme": "Soda Dark.sublime-theme",
+	"theme": "predawn-DEV.sublime-theme",
 	"word_wrap": true,
 	"wrap_width": 80
 }
