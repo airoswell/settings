@@ -1,0 +1,3 @@
+CellPrint @ Cell[StyleData["StandardForm"], ##] & @@
+  (CurrentValue[{"StyleDefinitions", "StandardForm"}] /.
+     (FontFamily -> _) :> (FontFamily -> Inherited))
