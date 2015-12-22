@@ -1,0 +1,34 @@
+(** User Mathematica initialization file **)
+FrontEndExecute[
+ FrontEnd`AddMenuCommands[
+  "DuplicatePreviousOutput", {Delimiter, MenuItem["Make List",
+    FrontEnd`KernelExecute[
+     nb = SelectedNotebook[];
+     sel = NotebookRead[nb];
+     If[sel === {},
+      FrontEndExecute[FrontEndToken["InsertMatchingBraces"]],
+      NotebookWrite[nb, Cell[BoxData[RowBox[{"{", sel, "}"}]]]]]],
+    MenuKey["{", Modifiers -> {}],
+    System`MenuEvaluator -> Automatic]}]];
+FrontEndExecute[
+ FrontEnd`AddMenuCommands[
+  "DuplicatePreviousOutput", {Delimiter, 
+   MenuItem["Make List", 
+    FrontEnd`KernelExecute[nb = SelectedNotebook[];
+     sel = NotebookRead[nb];
+     If[sel === {}, 
+      FrontEndExecute[FrontEndToken["InsertMatchingBrackets"]], 
+      NotebookWrite[nb, Cell[BoxData[RowBox[{"[", sel, "]"}]]]]]], 
+    MenuKey["[", Modifiers -> {}], 
+    System`MenuEvaluator -> Automatic]}]];
+FrontEndExecute[
+ FrontEnd`AddMenuCommands[
+  "DuplicatePreviousOutput", {Delimiter, 
+   MenuItem["Make List", 
+    FrontEnd`KernelExecute[nb = SelectedNotebook[];
+     sel = NotebookRead[nb];
+     If[sel === {}, 
+      FrontEndExecute[FrontEndToken["InsertMatchingParentheses"]], 
+      NotebookWrite[nb, Cell[BoxData[RowBox[{"(", sel, ")"}]]]]]], 
+    MenuKey["(", Modifiers -> {}], 
+    System`MenuEvaluator -> Automatic]}]]
