@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<root>
+<devicevendordef>
+    <vendorname>APPLE</vendorname>
+    <vendorid>0x05ac</vendorid>
+</devicevendordef>
+<deviceproductdef>
+    <productname>SWEDISH-KEYBOARD</productname>
+    <productid>0x0274</productid>
+</deviceproductdef>
+<item>
+    <name>Swapping SECTION and BACKQUOTE</name>
+    <identifier>private.deviceproductdef</identifier>
+    <device_only>DeviceVendor::APPLE, DeviceProduct::SWEDISH-KEYBOARD</device_only>
+    <autogen>--KeyToKey-- KeyCode::SWEDISH_SECTION, KeyCode::SWEDISH_LESS_THAN</autogen>
+    <autogen>--KeyToKey-- KeyCode::SWEDISH_LESS_THAN, KeyCode::SWEDISH_SECTION</autogen>
+</item>
+</root>
