@@ -1,4 +1,5 @@
 (** User Mathematica initialization file **)
+(** ~/Library/Mathematica/kernel/init.m **)
 FrontEndExecute[
  FrontEnd`AddMenuCommands[
   "DuplicatePreviousOutput", {Delimiter, MenuItem["Make List",
